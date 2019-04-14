@@ -63,7 +63,10 @@ function parseBankAccount(bankAccount) {
  *                                                                                                'characters.'
  */
 function* wrapText(text, columns) {
-    throw new Error('Not implemented');
+    let str = text.match(new RegExp(`.{1,${columns}}( |$)`,'g'));
+    for (let key of str) {
+        yield key.trim();
+    }
 }
 
 
