@@ -215,7 +215,7 @@ function toCsvText(arr) {
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
 function toArrayOfSquares(arr) {
-   return arr.map(i=>i**2);
+   return arr.map(i=>Math.pow(i, 2));
 }
 
 
